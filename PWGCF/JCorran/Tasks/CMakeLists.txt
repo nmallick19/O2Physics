@@ -43,3 +43,13 @@ o2physics_add_dpl_workflow(j-fluc-efficiency-task
                     SOURCES jFlucEfficiencyTask.cxx
                     PUBLIC_LINK_LIBRARIES O2::Framework O2Physics::AnalysisCore O2Physics::JCorran
                     COMPONENT_NAME Analysis)
+
+o2physics_add_dpl_workflow(j-ese-creator
+                    SOURCES jESECreator.cxx
+                    PUBLIC_LINK_LIBRARIES O2::Framework O2Physics::AnalysisCore O2Physics::JCorran
+                    COMPONENT_NAME Analysis)
+
+o2physics_add_dpl_workflow(j-correlations-ese
+                    SOURCES correlationsEse.cxx
+                    PUBLIC_LINK_LIBRARIES O2::Framework O2Physics::AnalysisCore O2Physics::PWGCFCore O2Physics::JCorran
+                    COMPONENT_NAME Analysis)
